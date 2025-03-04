@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.libraryproject'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.18.2'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.7.4'
+}
+
+test {
+    useJUnitPlatform()
+}
