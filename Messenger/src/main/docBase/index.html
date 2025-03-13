@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <title>Message</title>
+</head>
+<body>
+<div id="create-account">
+    <h2>Create an account</h2>
+    <label>Username: <input type="text" name="username"></label>
+    <label>Password: <input type="password" name="password"></label>
+    <label class="button"><input type="submit" value="Sign Up" onclick="createAccount()"></label>
+</div>
+<div id="send-message">
+    <h2>Send a message</h2>
+    <label>Send to: <input type="text" name="receiver_username"></label>
+    <label>Message: <input type="text" name="message"></label>
+    <label class="button"><input type="submit" value="Send" onclick="sendMessage()"></label>
+</div>
+<div id="get-messages">
+    <h2>See messages</h2>
+    <label>Username: <input type="text" name="username"></label>
+    <label>Password: <input type="password" name="password"></label>
+    <label class="button"><input type="submit" value="Update the Inbox" onclick="getMessages()"></label>
+    <h3>Inbox</h3>
+</div>
+<div>
+    <ul id="inbox"></ul>
+</div>
+</body>
+</html>

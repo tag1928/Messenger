@@ -1,0 +1,39 @@
+body
+{
+    background-color: rgb(0, 1, 50);
+    font-family: calibri, sans-serif;
+}
+
+label, h2, h3, li
+{
+    color: white;
+    text-align: center;
+}
+
+label
+{
+    display: block;
+    text-align: right;
+    margin-top: 1em;
+}
+
+div
+{
+    display: table;
+    margin: auto;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+li
+{
+    text-align: left;
+}
+
+.button
+{
+    text-align: center;
+}
